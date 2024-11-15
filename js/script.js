@@ -1,5 +1,3 @@
-// menu que se encoge y redondea al hacer scroll
-
 const menu = document.getElementById("menu");
 const navbarCollapse = document.getElementById("navbarNav");
 
@@ -47,3 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevenir el envío por defecto
+    alert('Formulario enviado correctamente. ¡Gracias por tu mensaje!');
+    this.reset(); // Reinicia el formulario
