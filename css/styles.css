@@ -1,1 +1,128 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --beige:#ECE1CB;
+    --amarillo: #FDC055;
+    --ocre: #D29A38;
+    --naranja: #EC8C50;
+    --rojo: #DF6F5B;
+    --azul: #5477A4;
+    --verde: #256063;
+    --turquesa: #7AB6B9;
+    --menu: #D2C5AA;
+  }
+
+main{
+  padding-top: 74px;
+}
+
+/* scroll indicator */
+  .progress-container {
+    width: 100%;
+    height: 6px;
+    background: burlywood;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.progress-bar {
+    height: 6px;
+    background: var(--verde);
+    width: 0%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* menu */
+
+#menu{
+    background-color: var(--menu);
+    transition-duration: 0.3s;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    width: 100%;
+    z-index: 999;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+a:visited,
+a:link {
+    font-family: "Courier Prime", monospace;
+    text-decoration: none;
+    color: black;
+}
+
+#logo-menu, #logo-footer, #logo-menu-movil{
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+#logo-menu:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+#logo-footer:hover{
+  text-decoration: underline;
+}
+
+.nav-item{
+    font-family: "Courier Prime", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.nav-item:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.navbar-toggler {
+    outline: none; 
+    border: none; 
+}
+
+  
+.navbar-toggler:focus {
+    box-shadow: none; 
+    outline: none; 
+}
+
+.close-menu{
+  display: none;
+}
+
+.scrolled{
+    width: 80vw;
+    border-radius: 90px;
+    margin-top: 1rem;
+}
+
+
+p{
+    font-size: 6rem;
+}
