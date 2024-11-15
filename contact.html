@@ -13,34 +13,47 @@
 </head>
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8">
-                <h2 class="text-center mb-4">Contacta con nosotros</h2>
-                <form id="contactForm">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Tu nombre completo" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="tucorreo@email.com" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="subject" class="form-label">Asunto</label>
-                        <input type="text" class="form-control" id="subject" placeholder="Asunto del mensaje" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
-                </form>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <h2 class="title has-text-centered">Contacta con nosotros</h2>
+                    <form id="contactForm">
+                        <div class="field">
+                            <label class="label" for="name">Nombre</label>
+                            <div class="control">
+                                <input class="input" type="text" id="name" placeholder="Tu nombre completo" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="email">Correo Electrónico</label>
+                            <div class="control">
+                                <input class="input" type="email" id="email" placeholder="tucorreo@email.com" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="subject">Asunto</label>
+                            <div class="control">
+                                <input class="input" type="text" id="subject" placeholder="Asunto del mensaje" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="message">Mensaje</label>
+                            <div class="control">
+                                <textarea class="textarea" id="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit" class="button is-primary is-fullwidth">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
 
     
     <script src="js/script.js"></script>
